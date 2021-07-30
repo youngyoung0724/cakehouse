@@ -1,0 +1,279 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+font-family: 'Josefin Slab', serif;
+font-family: 'Poppins', sans-serif;
+ */
+
+ *{box-sizing:border-box; font-family: 'Poppins', sans-serif;}
+ html, body{margin: 0; padding: 0;}
+ h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ ul, ol{margin: 0; padding: 0; list-style: none;}
+ a{text-decoration: none;}
+
+ /*#header*/
+ #header{}
+ .top{height: 40px; background-color: #f295b2;}
+ .top .wrap{width: 1200px; height: 100%; margin: 0 auto; padding: 0 10px; /*background: #d27592;*/}
+ .top .wrap .info{float: left;}
+ .top .wrap .info ul{}
+ .top .wrap .info ul li{float: left; margin: 0 10px;}
+ .top .wrap .info ul li:first-child{margin-left: 0;}
+ .top .wrap .info ul li p{line-height: 40px; color:#fff; font-size: 14px; font-weight: 500; padding-left: 20px; background-size: auto 14px; background-repeat: no-repeat; background-position: 0 50%;   filter: brightness(0) invert(1)}
+ 
+ .top .wrap .info ul li:first-child p{background-image: url(../img/phone.png);}
+ .top .wrap .info ul li:last-child p{background-image: url(../img/email.png);}
+ 
+ .top .wrap .sns{float: right; padding: 12px 0;}
+ .top .wrap .sns ul{}
+ .top .wrap .sns ul li{float: left; margin: 0 5px;}
+ .top .wrap .sns ul li:last-child{margin-right: 0;}
+ .top .wrap .sns ul li a{display: block; width: 16px;height: 16px; background-size: cover; background-position: 50% 50%;   filter: brightness(0) invert(1)}
+ .top .wrap .sns ul li:nth-child(1) a{background-image: url(../img/sns-icon/youtube.png);}
+ .top .wrap .sns ul li:nth-child(2) a{background-image: url(../img/sns-icon/pinterest.png);}
+ .top .wrap .sns ul li:nth-child(3) a{background-image: url(../img/sns-icon/facebook.png);}
+ .top .wrap .sns ul li:nth-child(4) a{background-image: url(../img/sns-icon/insta.png);}
+ .top .wrap .sns ul li:nth-child(5) a{background-image: url(../img/sns-icon/twitter.png);}
+ 
+ 
+ .main{height: 60px; background-color: #fff; position: -webkit-sticky; position: sticky; top: 0; z-index: 9;
+box-shadow:0 1px 2px rgba(0,0,0,0.5);}
+ .main .wrap{width: 1200px; height: 100%; margin: 0 auto; /*background: #eee;*/ }
+ .main .wrap ul{text-align: center; font-size: 0;}
+ .main .wrap ul li{display: inline-block; margin: 0 10px; width: 180px; width: calc(100% / 6 - 20px); vertical-align: middle;}
+ .main .wrap ul li a{display: block; line-height: 60px; color:#555; font-size: 16px;}
+ .main .wrap ul li:hover a{color:#f295b2;}
+ 
+ .main .wrap ul li:nth-child(3) a{line-height: 1; padding-top: 4px;}
+ .main .wrap ul li a img{display: inline-block; height: 48px;}
+
+
+/****#main1****/
+#main1{height: 500px; background-size: cover; animation:20s fadeImg infinite;}
+@keyframes fadeImg{
+    0%{background-image: url(../img/main_bg_01.jpg); background-position: 0% 50%;}
+    33%{background-image: url(../img/main_bg_02.jpg); background-position: 100% 0%;}
+    66%{background-image: url(../img/main_bg_03.jpg); background-position: 50% 100%;}
+    100%{background-image: url(../img/main_bg_01.jpg); background-position: 0% 50%;}
+}
+#main1 .wrap{width: 1200px; height: 100%; min-height:300px; margin: 0 auto; /*background: #777;*/ position: relative;}
+#main1 .wrap .text_part{position: absolute; top:50%; transform: translateY(-50%); width: calc(100% / 12 * 7); padding: 0 10px; /*background: #555;*/ color:#fff;}
+
+#main1 .wrap .text_part .title{padding-bottom: 40px;}
+#main1 .wrap .text_part .title h2{font-size: 48px; font-weight: 700; line-height: 60px;}
+#main1 .wrap .text_part p{font-size: 18px; font-weight: 300; line-height: 30px; letter-spacing:0.5px; padding-bottom: 30px;}
+
+#main1 .wrap .text_part a{display: block; width: 200px; height: 50px;border-radius:25px; background-color: #fff; text-align: center; font-size: 18px; font-weight: 300; color:#555; line-height: 50px; transition: background-color 0.5s, color 0.5s;}
+#main1 .wrap .text_part a:hover{color:#fff; background-color:#f295b2}
+
+
+/* ***#main2***
+#main2{height: 500px; position: relative;}
+#main2 .slider{position: absolute; top:0; left:0; width: 100%; height: 100%; overflow: hidden;}
+#main2 .slider .slide_cover{width: 300%; height: 100%; animation:20s slideImg infinite;}
+
+@keyframes slideImg{
+    0%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    75%{margin-left: -100%;}
+    100%{margin-left: 0;}
+} */
+
+#main2 .slider .slide_cover .slide{width: calc(100% / 3); height: 100%; float: left; background-size: cover; background-position: 50% 50%;}
+#main2 .slider .slide_cover .slide1{background-image: url(../img/main_bg_01.jpg);}
+#main2 .slider .slide_cover .slide2{background-image: url(../img/main_bg_02.jpg);}
+#main2 .slider .slide_cover .slide3{background-image: url(../img/main_bg_03.jpg);}
+
+
+#main2 .wrap{width: 1200px; height: 100%; min-height:300px; margin: 0 auto; /*background: #777;*/ position: relative;}
+#main2 .wrap .text_part{position: absolute; top:50%; transform: translateY(-50%); width: calc(100% / 12 * 7); padding: 0 10px; /*background: #555;*/ color:#fff;}
+
+#main2 .wrap .text_part .title{padding-bottom: 40px;}
+#main2 .wrap .text_part .title h2{font-size: 48px; font-weight: 700; line-height: 60px;}
+#main2 .wrap .text_part p{font-size: 18px; font-weight: 300; line-height: 30px; letter-spacing:0.5px; padding-bottom: 30px;}
+
+#main2 .wrap .text_part a{display: block; width: 200px; height: 50px;border-radius:25px; background-color: #fff; text-align: center; font-size: 18px; font-weight: 300; color:#555; line-height: 50px; transition: background-color 0.5s, color 0.5s;}
+#main2 .wrap .text_part a:hover{color:#fff; background-color:#f295b2 }
+
+
+/* 중간교육. 공간에 대한 확장 */
+.wrap_test{width: 1200px; margin: 0 auto; padding: 0 10px; background:#ddd;}
+.wrap_test h3{font-size: 36px;}
+.wrap_test .cont_test{background: #bbb; font-size: 0; padding: 20px 0; /*margin-left:-10px; margin-right: -10px;*/}
+.wrap_test .cont_test .box{ display: inline-block; width:calc(25% - 20px); height: 200px; background: #aff; vertical-align: top; font-size: 20px; margin: 0 10px;}
+
+
+/***#cakes***/
+
+#cakes {
+    /* height: 970px; */
+    background-image: url(../img/deco_01.png),url(../img/deco_02.png);
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: 0 50%, 100% 50%;
+    background-attachment: fixed;
+}
+
+#cakes .wrap{width: 1200px; margin: 0 auto; padding: 100px 10px;}
+
+#cakes .wrap h2{font-size: 48px; color: #555; line-height: 60px; display: inline-block; font-weight: 700; position: relative; /*background: #ffa;*/ padding-right: 70px;}
+
+#cakes .wrap h2::after{content: ""; display: block; width: 50px; height: 2px; background-color: #555; position: absolute; top: 50%; right: 0;}
+
+#cakes .wrap h4{font-size:24px; color: #555; line-height: 30px; padding: 40px 0; font-style: italic; font-weight: 70;}
+
+#cakes .wrap .cont{font-size: 0; margin-left: -10px; margin-right: -10px;}
+
+#cakes .wrap .cont .box{display: inline-block; width:calc(25% - 20px); height: 280px; margin: 0 10px 20px; background-size: cover; background-position: 50% 50%; border-radius:10px; background-color: #aff; font-size: 16px; vertical-align: top; position: relative; text-align: center; overflow: hidden;}
+
+#cakes .wrap .cont .box:nth-child(1){background-image: url(../img/pd_01.jpg);}
+#cakes .wrap .cont .box:nth-child(2){background-image: url(../img/pd_02.jpg);}
+#cakes .wrap .cont .box:nth-child(3){background-image: url(../img/pd_03.jpg);}
+#cakes .wrap .cont .box:nth-child(4){background-image: url(../img/pd_04.jpg);}
+#cakes .wrap .cont .box:nth-child(5){background-image: url(../img/pd_05.jpg);}
+#cakes .wrap .cont .box:nth-child(6){background-image: url(../img/pd_06.jpg);}
+#cakes .wrap .cont .box:nth-child(7){background-image: url(../img/pd_07.jpg);}
+#cakes .wrap .cont .box:nth-child(8){background-image: url(../img/pd_08.jpg);}
+
+#cakes .wrap .cont .box .white_bg{width: 100%; height: 100%; background-color:rgba(255,255,255,0.7); padding-top:60px; position: relative; transition: transform 0.5s;  transform: translateY(100%);}
+
+#cakes .wrap .cont .box:hover .white_bg{ transform: translateY(0);}
+
+
+/*밑에서 위로 나타나게 하려면  transform: translateY(100%); / transform: translateY(0);*/
+
+#cakes .wrap .cont .box .white_bg h3{font-size: 20px; font-weight: 700; line-height: 40px; padding-bottom: 30px; color: #555; }
+
+#cakes .wrap .cont .box .white_bg p{font-family: 'Josefin Slab', serif; font-size: 20px; font-style: italic;
+font-weight: 700; color: #555; line-height: 30px;}
+
+#cakes .wrap .cont .box .white_bg  .addBtn{position: absolute; bottom:20px; left: 50%; transform: translateX(-50%);}
+#cakes .wrap .cont .box .white_bg .addBtn a{ display: block; width: 120px; line-height: 40px; background-color: #94c9d9; color: #fff; font-size: 16px; font-weight: 300; border-radius: 4px; transition:background-color 0.5s;}
+
+#cakes .wrap .cont .box .white_bg .addBtn a:hover{background-color: #74a9b9;}
+
+#service{/*height: 780px;*/ background-color:#f295b2;}
+#service .wrap{width: 1200px; margin: 0 auto; padding: 100px 10px;}
+#service .wrap h2{font-size: 48px; line-height: 60px; color:#fff; text-align: center; 
+padding-bottom: 48px;}
+#service .wrap .bar{width: 120px; height: 2px; background-color: #fff; margin: 0 auto 40px;}
+
+#service .wrap .cont{font-size: 0; margin-left: -10px; margin-right: -10px;}
+
+#service .wrap .cont .box{display: inline-block; vertical-align: top; width:calc(100% / 3 - 20px); height: 200px; border: 2px dashed #fff; padding: 18px; position: relative; margin: 0 10px 20px; color: #fff; transition:background-color 0.5s, color 0.5s;}
+
+#service .wrap .cont .box .inner{font-size: 0;}
+#service .wrap .cont .box .inner > div{display: inline-block; vertical-align: top; font-size: 16px;}
+#service .wrap .cont .box .inner > div.icon{width: 60px; /*background: #aaf;*/ font-size: 60px; }
+#service .wrap .cont .box .inner > div.txtBox{width:calc(100% - 60px); padding-left: 20px; font-size: 16px;}
+
+#service .wrap .cont .box .inner > div.txtBox h4{font-size: 20px; line-height: 30px;padding-bottom:10px; font-weight: 700;}
+#service .wrap .cont .box .inner > div.txtBox p{font-size: 14px; font-weight:300;}
+
+#service .wrap .cont .box a{position: absolute; display: block; right: 20px; bottom: 20px; width: 80px; height: 20px; background-color: #fff; color:#f295b2; font-size: 14px; line-height: 20px; text-align: center; text-transform: uppercase;border-radius: 10px;}
+
+#service .wrap .cont .box:hover{background-color:#fff; color: #555;}
+
+#service .wrap .cont .box:hover a{background-color:#f295b2; color:#fff;}
+
+#service .wrap .cont .box:hover a:hover {box-shadow:0 0 4px rgba(0,0,0,0.5); transition:box-shadow 0.5s;}
+
+
+#chefs{/*height: 630px; background: #eee; */}
+#chefs .wrap{width: 1200px; margin: 0 auto; /*background: #ffa;*/ font-size: 0; padding: 100px 0;}
+#chefs .wrap > div{display: inline-block; vertical-align: top; font-size: 16px;}
+#chefs .wrap > div.title{width: 25%; padding: 0 10px;} /*왼쪽*/
+#chefs .wrap > div.title h2{font-size: 48px; line-height: 60px; color:#555; padding-bottom: 30px;}
+#chefs .wrap > div.title p{font-size: 14px; font-weight: 300; font-style: italic; color:#555;}
+
+#chefs .wrap > div.cont{width: 75%; font-size: 0;}/*오른쪽*/
+#chefs .wrap > div.cont .box{display: inline-block; vertical-align: top; font-size: 16px;
+    /* width: calc(100% / 3 - 20px); margin: 0 10px;
+    background: #aff; */
+    width: calc(100% / 3); padding: 0 10px;/*오른쪽 with값 100%에서 공간 나눠줌*/
+    /*background: #aaf;*/
+}
+/*
+width: calc(100% / 3 - 20px); margin: 0 10px; 사용한 경우 : 최초의 분기점부터 공간을 분리한 경우 사용(분기점에 대한 배경을 넣어야 할 경우)
+
+width: calc(100% / 3); padding: 0 10px; 사용한 경우 : 최초의 분기점으로부터 자식의 위치를 분리시키고자 할 때 사용(분기점에 대한 내부의 가이드라인(패딩값)을 생성해야 할 경우)
+*/
+#chefs .wrap > div.cont .box .img_part{height: 280px; background-color: #faa; background-size: cover; background-position: 50% 50%;}
+
+#chefs .wrap > div.cont .box:nth-child(1) .img_part{background-image: url(../img/chef_02.jpg);}
+#chefs .wrap > div.cont .box:nth-child(2) .img_part{background-image: url(../img/chef_04.jpg);}
+#chefs .wrap > div.cont .box:nth-child(3) .img_part{background-image: url(../img/chef_03.jpg);}
+
+#chefs .wrap > div.cont .box .text_part{padding-top: 20px; color:#555;}
+#chefs .wrap > div.cont .box .text_part h4{font-size: 20px; font-weight: 700; line-height: 30px; padding-bottom: 20px; }
+#chefs .wrap > div.cont .box .text_part p{font-size: 14px; font-weight: 300;}
+
+#contact{height: 520px; background: #ddd; position: relative;}
+#contact .map_space{width: 100%; height: 100%;}
+#contact .total_space{position: absolute; top: 0; left: 0; width: 100%; height: 100%; /*background:rgba(100,225,255,0.5)*/;}
+#contact .total_space .wrap{width: 1200px; height: 100%; margin: 0 auto; /*background: rgba(255,255,0,0.75);*/}
+
+#contact .total_space .wrap .contact_box{width:calc(100% / 3 - 20px); height: 100%; margin: 0 10px; background-color:rgba(0,0,0,0.5); padding: 40px; position: relative;}
+/* width:calc(100% / 3 - 20px); 공간 나누기 3에 양옆 마진값 20빼줌*/
+
+
+#contact .total_space .wrap .contact_box h2{font-size: 48px; line-height: 60px; color: #fff; padding-bottom: 20px; font-weight: 700; text-align: center;}
+#contact .total_space .wrap .contact_box p{font-size: 14px; font-weight: 300; color: #fff; text-align: center;}
+
+#contact .total_space .wrap .contact_box .input_from{padding-top: 30px;}
+#contact .total_space .wrap .contact_box .input_from .input_line{padding-bottom: 10px;}
+
+#contact .total_space .wrap .contact_box .input_from .input_line input{width: 100%; height: 30px; border:none; background-color:transparent; border-bottom: 1px solid #fff; font-size: 16px; font-weight: 300; outline-color:aqua;}
+
+ /* placeholder 색상 바꾸기 */
+#contact .total_space .wrap .contact_box .input_from .input_line input::placeholder{color: #aaaaaa;} /* placeholder 컬러 지정방법 */
+
+#contact .total_space .wrap .contact_box .input_from .input_line input::-moz-placeholder{color: #aaaaaa;}
+
+#contact .total_space .wrap .contact_box .input_from .input_line input::-webkit-input-placeholder{color: #aaaaaa;}
+
+#contact .total_space .wrap .contact_box .input_from .input_line input::-ms-input-placeholde{color: #aaaaaa;}
+
+#contact .total_space .wrap .contact_box .input_from .sendbtn{
+    position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+} 
+/* left: 50%; transform: translateX(-50%);로 버튼 정중앙 정렬 */
+
+#contact .total_space .wrap .contact_box .input_from .sendbtn button{width: 180px; height: 40px; font-size: 16px; font-weight: 700; background-color: #faa; border:none; color: #fff; border-radius: 20px; }
+
+
+#contact .total_space .wrap .contact_box .input_from .sendbtn button:active{box-shadow: inset 2px 2px 4px rgba(0,0,0,0.3), inset -2px -2px 4px rgba(255,255,255,0.3);}
+/* 버튼 클릭시 음영주기 */
+
+
+
+
+
+#footer{}
+#footer .top_space{height: 280px; background-color: #333; color:#cfcfcf;}
+#footer .top_space .wrap{width: 1200px; margin: 0 auto;  font-size: 0;}
+#footer .top_space .wrap > div{display: inline-block; vertical-align: top; padding: 80px 0 30px;}
+#footer .top_space .wrap .title{width: 25%; padding-left: 10px; padding-right: 10px;}/*왼쪽공간*/
+#footer .top_space .wrap .title img{height: 30px;}
+#footer .top_space .wrap .title p{padding-top: 20px; font-size: 14px; font-weight: 300;}
+
+#footer .top_space .wrap .cont{width: 75%;}/*오른쪽공간*/
+#footer .top_space .wrap .cont > ul{}
+#footer .top_space .wrap .cont > ul > li{display: inline-block; vertical-align: top; width: calc(100% / 3); padding: 0 10px; font-size: 16px;}/*오른쪽공간 100% / 3*/
+#footer .top_space .wrap .cont > ul > li > h4{font-size: 20px; font-weight: 700; line-height: 30px;  padding-bottom: 20px;}
+#footer .top_space .wrap .cont > ul > li > ul{}
+#footer .top_space .wrap .cont > ul > li > ul > li{padding-bottom: 10px;}
+#footer .top_space .wrap .cont > ul > li > ul > li > a{display: block; font-size: 14px; font-weight: 300; line-height: 20px; color:#cfcfcf;}
+#footer .top_space .wrap .cont > ul > li > ul > li:hover > a{color:#fff;}
+
+#footer .top_space .wrap .cont > ul > li > ul > li > p{font-size: 14px; font-weight: 300; line-height: 20px;}
+
+#footer .top_space .wrap .cont > ul > li > ul > li > p.f_bold{font-weight: 700; color:#f295b2;}
+
+
+
+
+#footer .bottom_space{height: 40px; background-color: #000; color:#f295b2; text-align: center;}
+#footer .bottom_space p{line-height: 40px;}
